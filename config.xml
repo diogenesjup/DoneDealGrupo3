@@ -45,7 +45,6 @@
     <!-- Plugins -->  
     <!-- Core plugins -->
     <plugin name="cordova-plugin-whitelist" source="npm" />
-    <plugin name="org.apache.cordova.media" source="npm" />
     <plugin name="org.apache.cordova.network-information" source="npm" />
     
 
