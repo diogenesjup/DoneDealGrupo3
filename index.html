@@ -1,0 +1,453 @@
+<!--
+#
+# DIOGENES OLIVEIRA DOS SANTOS JUNIOR
+# WWW.DIOGENESJUNIOR.COM.BR
+# CONTATO@DIOGENESJUNIOR.COM.BR
+#
+-->
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<title>Done Deal - Lojista</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3acbc6">
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css?v=6" />
+
+<!-- ICONES -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- GOOGLE -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+<!-- STATUS BAR -->
+<div class="status-bar">
+  &nbsp;
+</div>
+<!-- STATUS BAR -->
+
+<!-- NAVEGAÇÃO PRINCIPAL -->
+<div class="navegacao">
+
+    <div class="menus menu1">
+      <a href="dashboard.html">Início</a>
+    </div>
+    <div class="menus menu2">
+      <a href="#paginaPopulares" data-transition="slideup">Leilões</a>
+    </div>
+    <div class="menus menu3">
+      <a href="#paginaExplorar" data-transition="slideup" style="margin-left: -3px;">Lances</a>
+    </div>
+    <div class="menus menu4">
+      <a href="#paginaMensagens" data-transition="slideup">Pedidos</a>
+    </div>
+    <div class="menus menu5">
+      <a href="#paginaConfig" style="left:-5px;" data-transition="slideup">Config</a>
+    </div>
+
+</div>
+<!-- NAVEGAÇÃO PRINCIPAL -->
+
+
+
+
+<!-- PAGINA INICIO / PAGINA ONE -->
+<div data-role="page" id="pageone">
+
+<!-- TITULO PÁGINA -->
+<div class="app-titulo-pagina">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-back-link">
+              <!--<a href="javascript:history.back();">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              </a>--> &nbsp;
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 area-titulo">
+              <h3>Leilões abertos</h3>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-forw-link">
+              <a href="index.html">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+              </a>
+          </div>
+       </div>
+    </div>
+</div>
+<!-- TITULO PÁGINA -->
+
+
+
+
+
+<!-- CONTEUDO -->
+<div class="work">
+  <div class="container">
+      
+
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+          <p>&nbsp;</p>
+          <p>Pedidos em aberto aguardando lances:</p>
+          <p>&nbsp;</p>         
+
+      </div>
+      </div>
+
+       <!-- MESMO BAIRRO -->
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <h4>Esses pedidos estão próximos a você:</h4>
+
+            <!-- CAIXA RESULTADOS --> 
+            <div class="caixa-resultados" id="caixaResultadosPedidos">
+
+                <p style="text-align: center;">carregando pedidos...</p>
+              
+            </div>
+            <!-- CAIXA RESULTADOS -->
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- CONTEUDO -->
+
+</div>
+<!-- PAGINA INICIO / PAGINA ONE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAGINA ITENS DO PEDIDO -->
+<div data-role="page" id="paginaPerfilProfissional">
+
+<!-- TITULO PÁGINA -->
+<div class="app-titulo-pagina">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-back-link">
+             <a href="#pageone">
+                <i class="fa fa-undo" aria-hidden="true"></i>
+              </a>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 area-titulo">
+              <h3>Detalhes do leilão</h3>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-forw-link">
+              &nbsp;
+          </div>
+       </div>
+    </div>
+</div>
+<!-- TITULO PÁGINA -->
+
+
+
+
+
+<!-- CONTEUDO -->
+<div class="work">
+  <div class="container">
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+
+          
+          <div id="itensUserEscolha">carregando itens...</div>
+
+
+          <p>&nbsp;</p>
+
+
+          <p>
+            <div class="form-group">
+               <input type="text" class="form-control" id="valorLance"  data-affixes-stay="true" required ata-prefix="R$ " data-thousands="." data-decimal="," placeholder="Valor do seu lance" />
+            </div>
+            <a class="btn btn-primary" href="#pageconfirmacao" data-transition="slideup" id="enviarLance">enviar lance ao pedido</a>
+          </p>
+          
+
+          
+                    
+
+      </div>
+
+  </div>
+</div>
+<!-- CONTEUDO -->
+
+</div>
+<!-- PAGINA ITENS DO PEDIDO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAGINA ITENS DO PEDIDO -->
+<div data-role="page" id="pageconfirmacao">
+
+<!-- TITULO PÁGINA -->
+<div class="app-titulo-pagina">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-back-link">
+             <a href="#pageone">
+                <i class="fa fa-undo" aria-hidden="true"></i>
+              </a>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 area-titulo">
+              <h3>Confirmação</h3>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-forw-link">
+              &nbsp;
+          </div>
+       </div>
+    </div>
+</div>
+<!-- TITULO PÁGINA -->
+
+
+
+
+
+<!-- CONTEUDO -->
+<div class="work">
+  <div class="container">
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          
+          <p>&nbsp;</p>
+
+          <p>
+            <i class="fa fa-check-circle fa-3x" aria-hidden="true" style="color:#7CB342;"></i>
+          </p>
+          <h2>Operação realizada com sucesso!</h2>
+
+
+          <p>&nbsp;</p>
+
+
+          <p>
+            
+            <a class="btn btn-primary" href="#pageone" data-transition="slideup" id="enviarLance">Voltar ao início</a>
+          </p>
+          
+
+          
+                    
+
+      </div>
+
+  </div>
+</div>
+<!-- CONTEUDO -->
+
+</div>
+<!-- PAGINA ITENS DO PEDIDO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- PAGINA CONFIGURAÇÕES -->
+<div data-role="page" id="paginaConfig">
+
+    <!-- TITULO PÁGINA -->
+    <div class="app-titulo-pagina">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-back-link">
+                  <a href="#pageone">
+                    <i class="fa fa-undo" aria-hidden="true"></i>
+                  </a>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 area-titulo">
+                  <h3>Configurações</h3>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 app-forw-link">
+                  <!-- --> &nbsp;
+              </div>
+           </div>
+        </div>
+    </div>
+    <!-- TITULO PÁGINA -->
+
+
+    <!-- CONTEUDO -->
+    <div class="work">
+      <div class="container">
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <p>Nessa tela você pode alterar as configurações gerais do aplicativo:</p>
+              <p>&nbsp;</p>
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                              <!-- FOTO PERFIL --> 
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                  <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Atualizar foto de Perfil
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                  <div class="panel-body">
+                                      <h4 style="text-align: center;">Atualizar foto de perfil</h4> 
+                                        <p>&nbsp;</p>
+                                          <p style="text-align: center;">
+                                             <img src="images/default.jpg" id="fotoPerfil" style="width: 75%;height: auto;padding: 3px;border:1px solid #f2f2f2;">
+                                          </p>   
+                                        <p>&nbsp;</p>
+
+                                        <div class="form-group">
+                                          <input type="file" id="fileUpload" name="fileUpload" />
+                                        </div>
+                                        <div class="form-group">
+                                           <button class="btn btn-default" id="btnEnviarFoto">ATUALIZAR FOTO DE PERFIL</button>
+                                        </div> 
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- FOTO PERFIL -->
+
+                              <!-- DADOS PESSOAIS -->
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Atualizar dados pessoais
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="panel-body">
+                                            <h4 style="text-align: center;">Seus dados</h4> 
+                                            <p>&nbsp;</p>
+
+                                            <div class="form-group">
+                                              <label>Seu nome</label>
+                                              <input type="text" name="nome" class="form-control" placeholder="Seu nome" id="perfilNome">
+                                            </div>
+
+                                            <div class="form-group">
+                                              <label>Seu e-mail</label>
+                                              <input type="email" name="email" class="form-control" placeholder="Seu email" id="perfilEmail" disabled>
+                                            </div>
+
+                                            <div class="form-group">
+                                              <label>Senha de acesso</label>
+                                              <input type="password" name="senha" class="form-control" placeholder="Sua senha de acesso" id="perfilSenha">
+                                            </div>
+
+                                            <div class="form-group">
+                                              <button class="btn btn-default">ATUALIZAR DADOS</button>
+                                            </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- DADOS PESSOAIS -->
+
+                            
+
+
+                            </div>
+              
+          </div>
+
+      </div>
+    </div>
+    <!-- CONTEUDO -->
+
+  
+</div>
+<!-- PAGINA CONFIGURAÇÕES -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUGRiH2iey-c2WqqeegGF2qpxBDNLsmfQ&libraries=places"></script> 
+    <script type="text/javascript" src="js/scripts.js?v=12"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript">
+     
+      carregarPedidos();
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        $('#valorLance').maskMoney();
+      })
+    </script>
+
+</body>
+</html>
