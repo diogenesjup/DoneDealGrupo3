@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "DONEDEAL4"
-        versionCode = "4" 
-        version   = "4">
+        versionCode = "5" 
+        version   = "5">
     <name>Done Deal</name>
 
     <description>
@@ -43,6 +43,16 @@
     -->
 
     <!-- Plugins -->  
+    <!-- Core plugins -->
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="org.apache.cordova.inappbrowser" source="npm" />
+    <plugin name="org.apache.cordova.media" source="npm" />
+    <plugin name="org.apache.cordova.network-information" source="npm" />
+    
+
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
 
 
     <!-- Third party plugins -->
