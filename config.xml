@@ -45,8 +45,7 @@
     <!-- Plugins -->  
     <!-- Core plugins -->
     <plugin name="cordova-plugin-whitelist" source="npm" />
-    <plugin name="org.apache.cordova.network-information" source="npm" />
-    
+       
 
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
