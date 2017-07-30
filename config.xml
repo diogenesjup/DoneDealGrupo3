@@ -4,8 +4,8 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "DONEDEAL4"
-        versionCode = "5" 
-        version   = "5">
+        versionCode = "6" 
+        version   = "6">
     <name>Done Deal</name>
 
     <description>
@@ -47,11 +47,7 @@
     <plugin name="cordova-plugin-whitelist" source="npm" />
        
 
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-    </feature>
-
-
+   
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
@@ -86,7 +82,7 @@
     <gap:splash src="images/icon/screen-portrait.jpg"      gap:platform="winphone" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>5</string>
+    <string>6</string>
     </gap:config-file>   
        
         <access />            
